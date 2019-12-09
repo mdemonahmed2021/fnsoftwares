@@ -1,0 +1,81 @@
+*{margin:0;padding:0;}
+/* Slider
+http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
+*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.flex-caption{ position: absolute; right:390px; bottom:175px;}
+.caption_title_line{width:835px;height:75px;padding: 5px 15px 64px 15px;}
+.caption_title_line p{font-family:arial;color: #345457;line-height: 30px;text-align:justify}
+.flex-caption h2{color: #fd03f8;font-size:50px;padding:5px 0 10px 0;margin:0px;margin-bottom: 10px;font-weight: 700;font-family: 'poppins',sans-serif;}
+.span_color_changes{color:#09c5d6;display: inline;}
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.buttonDesign {
+    margin-top: 50px;
+	padding-left:15px;
+}
+.buttonDesign span:hover{border-color:orange;background:orange;}
+span a {
+    text-decoration: none;
+    color: white;
+}
+span.watchVideoDesign {
+    border: 1px solid #11193D;
+    margin-right: 35px;
+    float: left;
+    background: #11193D;
+    padding: 20px 30px;
+	transition:0.5s all;
+}
+span.buyNowDesign {
+    border: 2px solid #11193D;
+    padding: 18px 40px;
+    float: left;
+	transition:0.5s all;
+} 
+/* FlexSlider Necessary Styles
+*********************************/ 
+
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%;display: block;width: 100%;height:560px;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider {position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flex-container {zoom: 1; position: relative;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:11px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next_a.png) no-repeat center; bottom:210px;top: 257px;right:3px;}
+.flex-direction-nav li a.prev {background:url(images/prev_a.png) no-repeat center;bottom:166px;float: right;left: 1px;top: 256px;}
+.flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
+.flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
+.flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+.slider_container{ width:90%; margin:0 0 0 2%; clear:both; background:none; padding:30px 0 0 0;}
+.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
+.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
+.flex-caption { display:none;}
+}
